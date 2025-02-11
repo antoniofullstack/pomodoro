@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pomodoro Break</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="Content-Security-Policy" 
+      content="default-src 'self'; 
+      script-src 'self'; 
+      style-src 'self' 'unsafe-inline';
+      img-src 'self' data:;
+      media-src 'self'">
+</head>
+<body>
+    <div class="container">
+        <h1>Pomodoro Break</h1>
+        
+        <div class="timer-display">
+            <span id="minutes">20</span>:<span id="seconds">00</span>
+        </div>
+
+        <div class="controls" role="group" aria-label="Timer controls">
+            <input type="number" 
+                   id="duration" 
+                   value="20" 
+                   min="1" 
+                   max="120"
+                   aria-label="Duration in minutes">
+            <label for="duration" id="duration-label">minutes</label>
+            
+            <button id="startBtn" 
+                    class="primary-btn"
+                    aria-label="Start timer">Start</button>
+            <button id="stopBtn" 
+                    class="secondary-btn" 
+                    disabled
+                    aria-label="Stop timer">Stop</button>
+        </div>
+
+        <div id="message" class="message"></div>
+    </div>
+    
+    <script src="renderer.js"></script>
+</body>
+</html> 

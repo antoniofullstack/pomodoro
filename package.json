@@ -1,0 +1,70 @@
+{
+  "name": "pomodoro-timer",
+  "version": "1.0.0",
+  "description": "An Electron app to remind users to take breaks and drink water",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^19.0.8",
+    "electron-squirrel-startup": "^1.0.1",
+    "react": "^19.0.0"
+  },
+  "build": {
+    "files": [
+      "**/*",
+      "icons/*"
+    ],
+    "directories": {
+      "buildResources": "icons"
+    }
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.6.1",
+    "@electron-forge/maker-deb": "^7.6.1",
+    "@electron-forge/maker-rpm": "^7.6.1",
+    "@electron-forge/maker-squirrel": "^7.6.1",
+    "@electron-forge/maker-zip": "^7.6.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.6.1",
+    "@electron-forge/plugin-fuses": "^7.6.1",
+    "@electron/fuses": "^1.8.0",
+    "electron": "^28.1.0",
+    "electron-packager": "^17.1.2"
+  },
+  "config": {
+    "forge": {
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "pomodoro_timer",
+            "authors": "Your Name",
+            "description": "Pomodoro Timer Application"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip"
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  }
+}
