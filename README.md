@@ -16,7 +16,7 @@ A simple and efficient Pomodoro Timer application built with Electron and React.
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/yourusername/pomodoro.git
+git clone https://github.com/antoniofullstack/pomodoro.git
 cd pomodoro
 ```
 

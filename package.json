@@ -12,8 +12,8 @@
     "eject": "react-scripts eject"
   },
   "author": {
-    "name": "Your Name",
-    "email": "your.email@example.com"
+    "name": "Antonio Fullstack",
+    "email": "seu.email@exemplo.com"
   },
   "license": "ISC",
   "dependencies": {
@@ -49,7 +49,7 @@
           "name": "@electron-forge/maker-squirrel",
           "config": {
             "name": "pomodoro_timer",
-            "authors": "Your Name",
+            "authors": "Antonio Fullstack",
             "description": "Pomodoro Timer Application"
           }
         },
